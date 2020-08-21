@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Okkhor 52</title>
+    <link rel="stylesheet" href="mdl/material.min.css">
+    <script src="mdl/material.min.js"></script>
+    <script src="js/common.js"></script>
+    <script src="js/v1/converter.js"></script>
+    <script src="js/v1/rconverter.js"></script>
+    <link rel="stylesheet" href="css/style.css"/>
+</head>
+<body>
+    <div class="textboxCont">
+        <div class="mdl-textfield mdl-js-textfield mdl-textfield--floating-label fullwidth fullheight">
+            <textarea id="uniText" class="mdl-textfield__input fullwidth fullheightalt textboxCustom" style="font-family: RuposhiUnicode; font-size: 20px;"></textarea>
+            <label class="mdl-textfield__label" for="uniText">এখানে ইউনিকোড লিখুন</label> 
+        </div>
+        <div class="buttonCont">
+            <button onclick="doCopy('uniText')" class="mdl-button mdl-js-button mdl-button--fab mdl-button--mini-fab mdl-button--colored">
+                <i class="material-icons">content_copy</i>
+            </button>
+            <button onclick="clearText()" class="mdl-button mdl-js-button mdl-button--fab mdl-button--mini-fab mdl-button--colored">
+                <i class="material-icons">clear</i>
+            </button>
+        </div>
+    </div>
+    <span class="material-icons convertIcon">code</span>
+    <div class="textboxCont">
+        <div class="mdl-textfield mdl-js-textfield mdl-textfield--floating-label fullwidth fullheight">
+            <textarea id="ansiText" class="mdl-textfield__input fullwidth fullheightalt textboxCustom" style="font-family: RuposhiANSIV1; font-size: 20px;"></textarea>
+            <label class="mdl-textfield__label" for="ansiText">এখানে এএনএসআই লিখুন</label> 
+        </div>
+        <div class="buttonCont">
+            <button onclick="doCopy('ansiText')" class="mdl-button mdl-js-button mdl-button--fab mdl-button--mini-fab mdl-button--colored">
+                <i class="material-icons">content_copy</i>
+            </button>
+            <button onclick="clearText()" class="mdl-button mdl-js-button mdl-button--fab mdl-button--mini-fab mdl-button--colored">
+                <i class="material-icons">clear</i>
+            </button>
+        </div>
+    </div>
+
+    <div id="copySuccess" class="toast">Successfully Copied to Clipboard</div>
+    <div id="pasteSuccess" class="toast">Successfully Pasted in Textbox</div>
+    <div id="clearSuccess" class="toast">Textbox is Cleared Successfully</div>
+    <div id="funcFailed" class="toast">Textbox is Empty!</div>
+    <div id="pasteFailed" class="toast">Clipboard Permission Denied!</div>
+    <div id="pasteEmpty" class="toast">Clipboard is Empty!</div>
+    
+    <script src="js/v1/defualt.js"></script>
+</body>
+</html>

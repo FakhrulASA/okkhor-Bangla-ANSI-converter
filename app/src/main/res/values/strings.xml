@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">Bangla Converter</string>
+    <string name="title_activity_main2">MainActivity2</string>
+    <string name="tab_text_1">Unicode to ANSI V1</string>
+    <string name="tab_text_2">Unicode to ANSI V2</string>
+    <string name="tab_text_3">Unicode to ANSI V3</string>
+</resources>
