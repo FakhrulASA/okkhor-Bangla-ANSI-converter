@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Okkhor 52</title>
+    <link rel="stylesheet" href="mdl/material.min.css">
+    <script src="mdl/material.min.js"></script>
+    <link rel="stylesheet" href="css/style.css"/>
+    <script src="img/jquery.min.js"></script>
+</head>
+<body>
+
+    <style>
+
+        .demo-card-square.mdl-card {
+            margin: 10px 20px;
+            width: calc(100% - 40px);
+            height: 260px;
+            text-align: center;
+            border-radius: 10px;
+        }
+        .demo-card-square > .mdl-card__title {
+          color: #fff;
+          background: #FF7522;
+        }
+        .imgCont {
+            padding: 10px;
+            background: #FF5722;
+        }
+
+        .imgCont img {
+            margin: auto; 
+            width: 140px;
+        }
+
+        .mdl-card__supporting-text {
+            width: calc(100% - 36px);
+        }
+
+        </style>
+        
+        <div class="demo-card-square mdl-card mdl-shadow--2dp">
+            <div class="imgCont">
+                <img src="img/leftMatralota.png" />
+            </div>
+            <div class="mdl-card__supporting-text">
+                Bangla Left Matralota Sign
+            </div>
+            <div class="mdl-card__actions mdl-card--border">
+                <a onclick="doCopy()" data-copy-item="঍" class="mdl-button mdl-button--colored mdl-js-button mdl-js-ripple-effect copy">
+                    Copy to Clipboard
+                </a>
+            </div>
+        </div>
+        <div class="demo-card-square mdl-card mdl-shadow--2dp">
+            <div class="imgCont">
+                <img src="img/rightMatralota.png" />
+            </div>
+            <div class="mdl-card__supporting-text">
+                Bangla Right Matralota Sign
+            </div>
+            <div class="mdl-card__actions mdl-card--border">
+                <a onclick="doCopy()" data-copy-item="঎" class="mdl-button mdl-button--colored mdl-js-button mdl-js-ripple-effect copy">
+                    Copy to Clipboard
+                </a>
+            </div>
+        </div>
+        <div class="demo-card-square mdl-card mdl-shadow--2dp">
+            <div class="imgCont">
+                <img src="img/ishwor.png" />
+            </div>
+            <div class="mdl-card__supporting-text">
+                Bangla Ishwor Sign
+            </div>
+            <div class="mdl-card__actions mdl-card--border">
+                <a onclick="doCopy()" data-copy-item="৺" class="mdl-button mdl-button--colored mdl-js-button mdl-js-ripple-effect copy">
+                    Copy to Clipboard
+                </a>
+            </div>
+        </div>
+        <div class="demo-card-square mdl-card mdl-shadow--2dp">
+            <div class="imgCont">
+                <img src="img/saw.png" />
+            </div>
+            <div class="mdl-card__supporting-text">
+                Sallallahou Alayhe Wasallam Sign
+            </div>
+            <div class="mdl-card__actions mdl-card--border">
+                <a onclick="doCopy()" data-copy-item="ﷺ" class="mdl-button mdl-button--colored mdl-js-button mdl-js-ripple-effect copy">
+                    Copy to Clipboard
+                </a>
+            </div>
+        </div>
+        <div class="demo-card-square mdl-card mdl-shadow--2dp">
+            <div class="imgCont">
+                <img src="img/bindu.png" />
+            </div>
+            <div class="mdl-card__supporting-text">
+               Bangla Bindu Sign
+            </div>
+            <div class="mdl-card__actions mdl-card--border">
+                <a onclick="doCopy()" data-copy-item="়" class="mdl-button mdl-button--colored mdl-js-button mdl-js-ripple-effect copy">
+                    Copy to Clipboard
+                </a>
+            </div>
+        </div>
+        <div class="demo-card-square mdl-card mdl-shadow--2dp">
+            <div class="imgCont">
+                <img src="img/om.png" />
+            </div>
+            <div class="mdl-card__supporting-text">
+               Om Sign
+            </div>
+            <div class="mdl-card__actions mdl-card--border">
+                <a onclick="doCopy()" data-copy-item="ॐ" class="mdl-button mdl-button--colored mdl-js-button mdl-js-ripple-effect copy">
+                    Copy to Clipboard
+                </a>
+            </div>
+        </div>
+        <div class="demo-card-square mdl-card mdl-shadow--2dp">
+            <div class="imgCont">
+                <img src="img/obogroho.png" />
+            </div>
+            <div class="mdl-card__supporting-text">
+               Bangla Obogroho Sign
+            </div>
+            <div class="mdl-card__actions mdl-card--border">
+                <a onclick="doCopy()" data-copy-item="ঽ" class="mdl-button mdl-button--colored mdl-js-button mdl-js-ripple-effect copy">
+                    Copy to Clipboard
+                </a>
+            </div>
+        </div>
+        <div class="demo-card-square mdl-card mdl-shadow--2dp">
+            <div class="imgCont">
+                <img src="img/anji.png" />
+            </div>
+            <div class="mdl-card__supporting-text">
+               Bangla Anji Sign
+            </div>
+            <div class="mdl-card__actions mdl-card--border">
+                <a onclick="doCopy()" data-copy-item="ঀ" class="mdl-button mdl-button--colored mdl-js-button mdl-js-ripple-effect copy">
+                    Copy to Clipboard
+                </a>
+            </div>
+        </div>
+
+        
+
+
+
+    <div id="copySuccess" class="toast">Successfully Copied to Clipboard</div>
+    
+    <script>
+        $('.copy').on('click', function() {
+        value = $(this).data('copy-item'); 
+        var $temp = $("<input>");
+        $("body").append($temp);
+        $temp.val(value).select();
+        document.execCommand("copy");
+        $temp.remove();
+        })
+
+        function doCopy() {
+            var toast = document.getElementById("copySuccess");
+            toast.classList.add("toastShow");
+            setTimeout( function(){
+            toast.classList.remove("toastShow"); 
+            }, 3000);
+        }
+    </script>
+</body>
+</html>

@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:showIn="navigation_view">
+
+    <group android:checkableBehavior="single">
+
+        <item
+            android:id="@+id/fb"
+            android:icon="@drawable/ic_baseline_web_24"
+            android:title="Follow us on Facebook" />
+        <item
+        android:id="@+id/web"
+        android:icon="@drawable/ic_baseline_public_24"
+        android:title="Visit Okkhor52" />
+        <item
+            android:id="@+id/web2"
+            android:icon="@drawable/ic_baseline_public_24"
+            android:title="Visit Lipighor" />
+        <item
+            android:id="@+id/web32"
+            android:icon="@drawable/ic_baseline_info_24"
+            android:title="About" />
+    </group>
+</menu>

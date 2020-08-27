@@ -56,34 +56,31 @@
  }
 
 body {
-    text-align: center; 
-    height: 100%;
-    overflow-y: hidden; 
+    text-align: center;
 	-webkit-user-select: none; 
 	-ms-user-select:none; 
 	user-select:none;
-	-o-user-select:none;
+    -o-user-select:none;
 }
 
 .fullwidth {
-    width: 100%;
+    width: calc(100% - 20px);
 }
 .fullheight {
-    height: 100%;
+    height: 140px;
 }
 .fullheightalt {
-    height: calc(100% - 10px);
+    height: 90px;
 }
 .textboxCont {
     position: relative; 
-    margin: 20px; 
-    width: calc(100% - 40px); 
-    height: calc(50% - 70px);
+    width: calc(100% - 40px);
+    padding: 20px; 
 }
 .buttonCont {
     position: absolute; 
-    bottom: 40px; 
-    right: 20px;
+    bottom: 60px; 
+    right: 40px;
 }
 .textboxCustom {
     width: 100%; 
@@ -136,4 +133,150 @@ body {
 @keyframes fadeout {
     from {bottom: 30px; opacity: 1;}
     to {bottom: 0; opacity: 0;}
+}
+@media screen and (min-height: 410px) {
+	.fullheight {
+        height: 140px;
+    }
+    .fullheightalt {
+        height: 90px;
+    }
+}
+@media screen and (min-height: 480px) {
+	.fullheight {
+        height: 160px;
+    }
+    .fullheightalt {
+        height: 110px;
+    }
+}
+@media screen and (min-height: 490px) {
+	.fullheight {
+        height: 170px;
+    }
+    .fullheightalt {
+        height: 120px;
+    }
+}
+@media screen and (min-height: 500px) {
+	.fullheight {
+        height: 180px;
+    }
+    .fullheightalt {
+        height: 130px;
+    }
+}
+@media screen and (min-height: 530px) {
+	.fullheight {
+        height: 190px;
+    }
+    .fullheightalt {
+        height: 140px;
+    }
+}
+@media screen and (min-height: 540px) {
+	.fullheight {
+        height: 200px;
+    }
+    .fullheightalt {
+        height: 150px;
+    }
+}
+
+@media screen and (min-height: 550px) {
+	.fullheight {
+        height: 210px;
+    }
+    .fullheightalt {
+        height: 160px;
+    }
+}
+@media screen and (min-height: 570px) {
+	.fullheight {
+        height: 220px;
+    }
+    .fullheightalt {
+        height: 170px;
+    }
+}
+@media screen and (min-height: 590px) {
+	.fullheight {
+        height: 230px;
+    }
+    .fullheightalt {
+        height: 180px;
+    }
+}
+
+@media screen and (min-height: 610px) {
+	.fullheight {
+        height: 240px;
+    }
+    .fullheightalt {
+        height: 190px;
+    }
+}
+@media screen and (min-height: 630px) {
+	.fullheight {
+        height: 250px;
+    }
+    .fullheightalt {
+        height: 200px;
+    }
+}
+@media screen and (min-height: 650px) {
+	.fullheight {
+        height: 260px;
+    }
+    .fullheightalt {
+        height: 210px;
+    }
+}
+@media screen and (min-height: 670px) {
+	.fullheight {
+        height: 270px;
+    }
+    .fullheightalt {
+        height: 220px;
+    }
+}
+@media screen and (min-height: 690px) {
+	.fullheight {
+        height: 280px;
+    }
+    .fullheightalt {
+        height: 230px;
+    }
+}
+@media screen and (min-height: 710px) {
+	.fullheight {
+        height: 290px;
+    }
+    .fullheightalt {
+        height: 240px;
+    }
+}
+@media screen and (min-height: 730px) {
+	.fullheight {
+        height: 300px;
+    }
+    .fullheightalt {
+        height: 250px;
+    }
+}
+@media screen and (min-height: 750px) {
+	.fullheight {
+        height: 310px;
+    }
+    .fullheightalt {
+        height: 260px;
+    }
+}
+@media screen and (min-height: 770px) {
+	.fullheight {
+        height: 320px;
+    }
+    .fullheightalt {
+        height: 270px;
+    }
 }
